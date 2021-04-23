@@ -3,7 +3,7 @@
 
 es_extended/server/player.lua
 
-	```lua
+
 self.addMoney = function(money, recursion)
 		money = ESX.Math.Round(money)
 		self.addAccountMoney('money', money)
@@ -11,4 +11,4 @@ self.addMoney = function(money, recursion)
 		if(not recursion)then
 			TriggerEvent("es:getPlayerFromId", self.source, function(user) user.addMoney(money, true) end)
 		end
-	end```
+	end
