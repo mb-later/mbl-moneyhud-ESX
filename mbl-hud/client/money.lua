@@ -23,7 +23,6 @@ AddEventHandler("mbl-moneyhud:ShowMoney", function(type)
     ESX.TriggerServerCallback("mbl:getMoney", function(PlayerData)
         cashAmount = PlayerData.nakitparasi
         print(PlayerData.nakitparasi)
-        TriggerEvent("hud:client:SetMoney")
         SendNUIMessage({
             action = "show",
             cash = cashAmount,
