@@ -12,11 +12,3 @@ ESX.RegisterServerCallback("mbl:getMoney", function(source, cb)
 	end
 end)
 
-
-RegisterCommand("paraekle", function(source)
-	local xPlayer = ESX.GetPlayerFromId(source)
-	print(xPlayer.getMoney())
-	if xPlayer then
-		xPlayer.addMoney(3000)
-	end
-end)
